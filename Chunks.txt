@@ -1,0 +1,17 @@
+Importing the random module:
+
+The code begins by importing the random module, which provides functions for generating pseudo-random numbers and randomness-related operations.
+User Input for Password Length:
+
+The user is prompted to input the desired length of the password. The int(input(...)) construct is used to convert the user's input (which is initially a string) into an integer.
+Password Character Set (pass_data):
+
+pass_data is a string containing a set of characters that can be used in the generated password. This includes lowercase letters, digits, and a variety of special characters.
+Random Password Generation:
+
+The random.sample() function is used to randomly select characters from pass_data. The second argument to random.sample() specifies the number of unique elements to be selected from the population (pass_data). This ensures that each character in the password is unique.
+"".join(...) is then used to concatenate the selected characters into a single string, forming the password.
+Printing the Password:
+
+The generated password is printed to the console.
+In summary, this script takes user input for the desired password length, generates a password using a predefined set of characters, and then prints the generated password. The use of random.sample() ensures that the characters in the password are unique, providing a basic level of security for the generated password.
